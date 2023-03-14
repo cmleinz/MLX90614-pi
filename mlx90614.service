@@ -1,0 +1,12 @@
+[Unit]
+Description=Webservice for querying temperature readings from MLX90614 infrared sensor
+After=network.target
+StartLimitIntervalSec=0[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=YOUR_USERNAME
+ExecStart=/usr/bin/mlx90614-pi
+
+[Install]
+WantedBy=multi-user.target

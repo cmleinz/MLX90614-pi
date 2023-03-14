@@ -16,7 +16,7 @@ struct Response {
 enum Error {
     #[error("1: Failed to create I2C connection")]
     Connection,
-    #[error("1: Failed to read/write to I2C bus")]
+    #[error("2: Failed to read/write to I2C bus")]
     Read,
 }
 

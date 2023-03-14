@@ -1,7 +1,9 @@
 [Unit]
 Description=Webservice for querying temperature readings from MLX90614 infrared sensor
 After=network.target
-StartLimitIntervalSec=0[Service]
+StartLimitIntervalSec=0
+
+[Service]
 Type=simple
 Restart=always
 RestartSec=1
